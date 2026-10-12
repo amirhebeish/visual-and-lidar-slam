@@ -1,0 +1,52 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters for Intel RealSense (Optimized via COLMAP)
+#--------------------------------------------------------------------------------------------
+Camera.type: "PinHole"
+
+# Camera calibration and distortion parameters (OpenCV format) 
+Camera.fx: 427.80392379607588
+Camera.fy: 407.67863473317135
+Camera.cx: 424.92068996796706
+Camera.cy: 243.25115619166021
+
+Camera.k1: 0.0013203113173995351
+Camera.k2: -0.00000790462074
+Camera.p1: -0.0010821530738970907
+Camera.p2: 0.0011530649457157662
+Camera.k3: 0.0           # Left as 0 since COLMAP OPENCV model uses 8 params
+
+# Image Resolution
+Camera.width: 848
+Camera.height: 480
+
+# Camera frames per second 
+# (Based on your downsampled dataset, ~5-10 FPS is expected)
+Camera.fps: 10.0 
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters (Standard off-the-shelf values for Baseline Evaluation)
+#--------------------------------------------------------------------------------------------
+ORBextractor.nFeatures: 1000
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500
